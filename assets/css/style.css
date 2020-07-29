@@ -1,0 +1,513 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@400;700&display=swap');
+
+
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+
+html {
+   scroll-behavior: smooth;
+}
+
+body {
+   font-family: 'Quicksand', sans-serif;   
+   margin: 0;
+   padding: 0;
+}
+
+h2, h3 {
+   color: #333;
+}
+
+h4, p {
+   color: #666;
+}
+
+/* Header Start*/
+
+header {
+    display: inline;
+}
+
+nav {
+   display: flex;
+   background-color: #000000;
+   color: white;
+   justify-content: space-around;
+   position: sticky;
+   top: 0;
+   height: 80px;
+   align-items: center; 
+}
+
+nav .logo {
+   font-family: 'Pacifico', cursive;
+   letter-spacing: 2px;
+   font-size: 20px;
+}
+
+.menu {
+   display: flex;
+   list-style: none;
+   width: 40%;
+   justify-content: space-between;
+   align-items: center; 
+}
+
+nav a {
+   color: white;
+   text-decoration: none;
+   font-size: 20px;
+}
+
+nav a:hover {
+   font-weight: bold;
+}
+
+nav .logo:hover {
+    cursor: pointer;
+}
+
+/* Header End */
+
+/* Banner Start */
+
+.banner {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: #000000;    
+   min-height: 600px;
+   background: url(../image/it-banner.jpg) no-repeat 0px 0px;
+   background-size: cover;
+   -webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+}
+
+.banner-right{
+   padding: 10px;
+   text-align: center;
+}
+
+.banner-left{
+   border-radius: 50%;
+   border: 3px solid white;
+   padding: 8px;
+   display: flex;
+}
+
+.banner-left img {
+   border-radius: 50%;
+   width: 250px;
+}
+
+.banner-right h1{
+   font-size: 34px;
+   font-weight: bold;
+   color:#ffffff;
+   letter-spacing: 10px;
+   margin-bottom: 15px;
+}
+
+.banner-right h2{
+   font-size: 35px;
+   font-weight: lighter;
+   color: #ffffff;
+   margin: 15px 0 45px 0;
+}
+
+.border {
+  background: white;
+  width: 70%;
+  margin: 0 auto;
+  padding: 1px;
+}
+
+.banner-right a{
+   text-decoration:none;
+   color:#ffffff;
+   font-size:16px;
+   font-weight:bold;
+   padding:16px 20px;
+   border:2px solid #fff;
+   border-radius: 10px;
+}
+
+.banner-right a:hover{
+   cursor: pointer;
+   background-color: black;
+}
+
+/* Banner End */
+
+/* Article Start */
+
+article {
+   padding: 80px;
+   background: #fafafa;
+}
+ 
+article .header {
+   text-align: center;
+   font-size: 30px;
+   letter-spacing: 5px;
+}
+
+.header .icon {
+   margin-bottom: 20px;
+}
+
+.container {
+   display: -ms-flexbox;
+   -ms-flexbox-wrap: wrap;
+   -ms-flexbox-direction: column;
+   -webkit-flex-flow: row wrap;
+   flex-flow: row wrap;
+   display: -webkit-box;
+   display: flex;
+}
+
+/* Article End */
+
+/* About Article Start*/
+
+.section-about {
+   width: 60%;
+   padding-top: 20px;
+   padding-right: 100px;
+}
+
+.section-about h2 {
+   font-size: 30px;
+}
+
+.section-about p {
+   font-size: 18px;
+   text-align: justify;
+}
+ 
+.section-skill {
+   width: 40%;
+}
+
+.skill-box {
+   margin-top: 20px;
+}
+
+.skill-box p {
+   font-weight: bold;
+}
+
+.percentage {
+   float: right;
+}
+
+.skill-container {
+   height: 15px;
+   border-radius: 1000px;
+   margin-top: 5px;
+   background-color: lightgrey;
+}
+
+.skill {
+   background: black;
+   height: 100%;
+   border-radius: 1000px;
+}
+
+.s1 {
+   width: 90%;
+}
+
+.s2 {
+   width: 85%;
+}
+
+.s3 {
+   width: 80%;
+}
+
+.s4 {
+   width: 70%;
+}
+
+.s5 {
+   width: 80%;
+}
+
+/* About Article End */
+
+/* Experience Article Start */
+
+.experience .container {
+    justify-content: center;
+ }
+ 
+ .experience-card {
+    width: 265px;
+    height: 300px;
+    margin: 10px;
+    text-align: center;
+    background: white;
+    box-shadow: 5px 5px 5px lightgray;
+ }
+ 
+ .year h3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background: black;
+    height: 35px;   
+ }
+ 
+ .work-title {
+    margin: 15px 5px 0 5px;
+    color: #333;
+ }
+ 
+ .work-position {
+    margin-top: 5px;
+    color: #666;
+ }
+ 
+ .jobdesk {
+    margin: 20px 5px 5px 5px;
+    color: #666;
+ }
+ 
+ /* Experience Ende */
+
+ /* Contact Start */
+
+.contact h3 {
+   text-transform: capitalize;
+   font-size: 25px;
+   font-weight: 600;
+   letter-spacing: 1px;
+   margin-bottom: 15px;
+   text-align: center;
+}
+
+.section-form {
+   width: 60%;
+   padding: 20px;
+   float: left;
+}
+
+.icon i {
+   font-size: 20px;
+   color: #333;
+}
+
+.section-form input[type="text"], .section-form input[type="email"], .section-form textarea {
+   outline: none;
+   width: 83%;
+   padding: .9em 1em;
+   font-size: 15px;
+   letter-spacing: 1px;
+   color: #888;
+   border: none;
+   border: 1px solid #777;
+   background: none;
+   margin-bottom: 1.5em;
+   border-radius: 10px;
+   font-family: 'Quicksand', sans-serif;
+}
+
+.section-form input[type="submit"] {
+   padding: 11px 35px;
+   color: #fff;
+   background: #222;
+   border: 2px solid #222;
+   font-weight: 600;
+   font-size: 15px;
+   letter-spacing: 1px;
+   border-radius: 35px;
+   float: right;
+   font-family: 'Quicksand', sans-serif;
+}
+
+.section-form input[type="submit"]:hover {
+   color: #222;
+   background: none;
+   border: 2px solid #222;
+   cursor: pointer;
+}
+
+label {
+   width: 17%;
+   float: left;
+   color: #333;
+   font-weight: 600;
+}
+
+.section-form textarea {
+   min-height: 120px;
+   resize: none;
+}
+
+aside {
+   width: 40%;
+   text-align: center;
+   padding-top: 10px;
+}
+
+aside label {
+   width: 100%;
+}
+
+aside p {
+   width: 100%;
+}
+
+aside img {
+   width: 150px;   
+   border-radius: 50%;
+   border: 3px solid black; 
+   padding: 5px;
+}
+
+.biodata-card {
+   border: 3px solid black;
+   border-radius: 35px;
+   width: 250px;
+   margin: auto;
+   padding: 10px;
+}
+
+/* Contact End */
+
+/* Footer Start */
+ 
+footer {
+   padding: 20px;
+   color: white;
+   background-color: #000000;
+   text-align: center;
+   font-weight: bold;
+}
+
+/* Footer End */
+
+/* Responsive Start */
+
+/* Ukuran Tablet */
+
+@media screen and (max-width: 768px){
+
+   .menu {
+      width: 50%;
+   }
+
+   .menu li a {
+        font-size: 20px;
+    }
+
+   .logo h1 {
+    font-size: 25px;
+    }
+   
+}
+
+@media screen and (max-width: 576px){
+
+    body{
+        overflow-x: hidden;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    .menu {
+        width: 80%;
+    }
+
+    .menu li a {
+        font-size: 20px;
+    }
+
+    .logo h1 {
+        font-size: 25px;
+    }    
+
+   .logo-img {
+      width : 100%;
+   }
+
+   .banner {
+      flex-direction: column;
+      min-height: 400px;
+   }
+
+   .banner-left img {
+      width: 150px;
+   }
+
+   .banner-right h1{
+      font-size: 20px;
+      letter-spacing: 5px;
+   }
+    
+   .banner-right h2{
+      font-size: 21px;
+   }
+    
+   .border {
+      width: 70%;
+   }
+    
+   .banner-right a{
+      font-size: 14px;
+   }
+
+   article {
+      padding-left: 20px;
+      padding-right: 20px;
+   }
+
+   article .header {
+      font-size: 20px;
+      letter-spacing: 3px;
+   }
+
+   article .header img {
+      inline-size: 50%;
+   }
+
+   .section-about {
+      width: 100%;
+      padding-top: 10px;
+      padding-right: 0;
+   }
+
+   .section-about h2 {
+      font-size: 20px;
+   }
+    
+   .section-skill {
+      width: 100%;
+   }
+
+   .section-form {
+      width: 100%;
+   }
+
+   .section-form input[type="text"], .section-form input[type="email"], .section-form textarea {
+      width: 70%;
+   }
+
+   label {
+      width: 30%;
+   }
+
+   aside {
+      width: 100%;
+   }
+
+
+}
